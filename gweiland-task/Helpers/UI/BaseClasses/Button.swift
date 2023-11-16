@@ -28,9 +28,9 @@ class Button: UIButton {
     
     init(title: String? = nil,
          attributedTitle: NSAttributedString? = nil,
-         titleColor: UIColor = .black,
+         titleColor: UIColor = .darkText,
          font: UIFont = .CustomFont(),
-         backgroundColor: UIColor = .primary,
+         backgroundColor: UIColor = .clear,
          borderColor: UIColor? = nil,
          borderWidth: CGFloat? = nil,
          cornerRadius : CGFloat? = nil,
@@ -101,13 +101,14 @@ class Button: UIButton {
         
         didSet {
             
+            let borderColor = UIColor(cgColor: self.layer.borderColor ?? CGColor(gray: 0, alpha: 0))
+            
             if isHighlighted{
                 
                 if backgroundColor != .clear {
                     
                     self.backgroundColor = self.backgroundColor?.withAlphaComponent(0.5)
                 }
-                
                 
                 self.subviews.forEach { subview in
                     subview.alpha =  0.5
@@ -119,13 +120,17 @@ class Button: UIButton {
                 
             } else {
                 
-                UIView.animate(withDuration: 0.2) {
+                UIView.animate(withDuration: 0.2) { [weak self] in
+                    guard let self else { return }
                     self.subviews.forEach { subview in
                         subview.alpha =  1.0
                     }
+    
                 }
                 
-                UIView.animate(withDuration: 0.2) {
+                
+                UIView.animate(withDuration: 0.2) { [weak self] in
+                    guard let self else { return }
                     
                     if self.backgroundColor != .clear {
                         self.backgroundColor = self.backgroundColor?.withAlphaComponent(1)
@@ -134,7 +139,8 @@ class Button: UIButton {
                 
                 guard let imageView = self.imageView else { return }
                 
-                UIView.animate(withDuration: 0.2) {
+                UIView.animate(withDuration: 0.2) { [weak self] in
+                    guard let self else { return }
                     
                     imageView.alpha = 1
                 }

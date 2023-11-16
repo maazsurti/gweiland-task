@@ -28,7 +28,7 @@ class TextField: UITextField, UITextFieldDelegate {
          placeholderTextAlignment: NSTextAlignment = isArabic ? .right : .left,
          attributedPlaceholderString: NSMutableAttributedString? = nil,
          textFont: UIFont = .CustomFont(),
-         borderColor: UIColor = .primary,
+         borderColor: UIColor = .clear,
          borderWidth: CGFloat = 0.0,
          textColor: UIColor = .darkText,
          backgroundColor: UIColor = .clear,

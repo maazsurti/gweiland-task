@@ -16,5 +16,7 @@ class RootViewController: BaseViewController {
     
     override func configure() {
         super.configure()
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

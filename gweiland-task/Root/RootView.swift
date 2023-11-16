@@ -11,13 +11,29 @@ import Stevia
 
 class RootView: BaseView {
     
-    let label = Label(text: "TEsts label fjkdshdlfka", font: .CustomFont(.black, size: 20))
+    let navigationBar = NavigationBar()
+    
+    let searchBar = SearchBar(placeholderText: "Search Cryptocurrency")
+    
+    let filterButton = FilterButton()
+    
+    lazy var searchFilterStack = StackView(arrangedSubviews: [searchBar, filterButton], spacing: 9, axis: .horizontal)
     
     override func configure() {
         super.configure()
         
-        subviews{label}
+        subviews{
+            navigationBar
+            searchFilterStack
+        }
         
-        label.centerInContainer()
+        navigationBar.Top == safeAreaLayoutGuide.Top + 46
+        navigationBar.Leading == Leading + leadingPadding
+        navigationBar.Trailing == Trailing - trailingPadding
+        
+        searchFilterStack.Top == navigationBar.Bottom + 25
+        searchFilterStack.Leading == navigationBar.Leading
+        searchFilterStack.Trailing == navigationBar.Trailing
+        
     }
 }
