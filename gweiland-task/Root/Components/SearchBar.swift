@@ -16,7 +16,7 @@ class SearchBar: BaseView {
     
     let searchIcon = BaseImageView(image: .magnifyingGlass)
     
-    init(placeholderText: String){
+    init(placeholderText: String) {
         super.init(frame: .zero)
         
         self.backgroundColor = .textFieldBackground

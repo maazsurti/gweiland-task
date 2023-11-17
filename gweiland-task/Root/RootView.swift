@@ -19,12 +19,18 @@ class RootView: BaseView {
     
     lazy var searchFilterStack = StackView(arrangedSubviews: [searchBar, filterButton], spacing: 9, axis: .horizontal)
     
+    let categoryBar = CategoryBar()
+    
+    let banner = Banner()
+    
     override func configure() {
         super.configure()
         
         subviews{
             navigationBar
             searchFilterStack
+            categoryBar
+            banner
         }
         
         navigationBar.Top == safeAreaLayoutGuide.Top + 46
@@ -34,6 +40,14 @@ class RootView: BaseView {
         searchFilterStack.Top == navigationBar.Bottom + 25
         searchFilterStack.Leading == navigationBar.Leading
         searchFilterStack.Trailing == navigationBar.Trailing
+        
+        categoryBar.Top == searchFilterStack.Bottom + 22
+        categoryBar.Leading == navigationBar.Leading + 2
+        categoryBar.Trailing == navigationBar.Trailing - 2
+        
+        banner.Top == categoryBar.Bottom + 15
+        banner.Leading == navigationBar.Leading
+        banner.Trailing == navigationBar.Trailing
         
     }
 }
