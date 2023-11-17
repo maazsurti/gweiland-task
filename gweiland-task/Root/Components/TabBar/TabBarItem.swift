@@ -14,7 +14,7 @@ class TabBarItem: BaseView {
     
     let itemImageView = BaseImageView(image: UIImage())
     
-    let itemTitleLabel = Label(textColor: .barItemUnselected ,font: .CustomFont(.semiBold, size: 10), alignment: .center)
+    let itemTitleLabel = Label(textColor: .barItemUnselected ,font: .CustomFont(.semiBold, size: 10), alignment: .center, numberOfLines: 1)
     
     var isCurrentTab: Bool = false {
         didSet{
@@ -27,6 +27,9 @@ class TabBarItem: BaseView {
         
         itemTitleLabel.text = itemTitle
         itemImageView.image = itemImage
+        
+        itemTitleLabel.adjustsFontSizeToFitWidth = true
+        itemTitleLabel.minimumScaleFactor = 0.5
         
         setProperties()
         

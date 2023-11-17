@@ -20,6 +20,8 @@ class TabBar: BaseView {
     
     let tabItem4 = TabBarItem(itemImage: .wallet, itemTitle: "Wallet")
     
+    lazy var stack = StackView(arrangedSubviews: [tabItem1, tabItem2, globeButton, tabItem3, tabItem4], spacing: 16, axis: .horizontal, distribution: .fillEqually, alignment: .center)
+    
     let globeButton = Button(image: .globe, makeImageScaleToFit: true)
     
     override func configure() {
@@ -31,31 +33,15 @@ class TabBar: BaseView {
         tabItem2.isCurrentTab = true
         
         subviews{
-            tabItem1
-            tabItem2
-            globeButton
-            tabItem3
-            tabItem4
+            stack
         }
         
-        tabItem1.Leading == Leading + 30
-        tabItem1.centerVertically()
-        
-        tabItem2.Leading == tabItem1.Trailing + 16
-        tabItem2.centerVertically()
-        
-        globeButton.Leading == tabItem2.Trailing + 14
-        globeButton.Top == Top + 9
-        globeButton.Bottom == Bottom - 9
-        globeButton.centerVertically()
+        stack.Leading == Leading + 30
+        stack.Top == Top + 9
+        stack.Bottom == Bottom - 9
+        stack.Trailing == Trailing - 30
+    
         globeButton.size(54)
-        
-        tabItem3.Leading == globeButton.Trailing + 14
-        tabItem3.centerVertically()
-        
-        tabItem4.Leading == tabItem3.Trailing + 16
-        tabItem4.Trailing == Trailing - 30
-        tabItem4.centerVertically()
         
     }
 }
