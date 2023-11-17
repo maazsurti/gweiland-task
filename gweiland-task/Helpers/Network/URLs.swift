@@ -7,55 +7,10 @@
 
 import Foundation
 
-let baseURL = "https://mynounou.org/demo/public/api/"
+let baseURL = "https://pro-api.coinmarketcap.com/"
 
-let webpageBaseURL = "https://nounoukw.com/"
+let cryptoCurrencyListingsURL = baseURL + "v1/cryptocurrency/listings/latest?limit=20"
 
-let registerURL = baseURL + "register"
-
-let loginURL = baseURL + "login"
-
-let onboardingImagesURL = baseURL + "sliders"
-
-let allCategoriesURL = baseURL + "all_categories"
-
-let getBookingsURL = baseURL + "bookings"
-
-let bannerImagesURL = baseURL + "banners"
-
-let packagesURL = baseURL + "packages"
-
-let servicesURL = baseURL + "services"
-
-let serviceDetailsURL = baseURL + "service/details"
-
-let itemDetailsURL = baseURL + "productdetails"
-
-let updateUserInfoURL = baseURL + "update-profile"
-
-let updatePasswordURL = baseURL + "update-password"
-
-let getAddressesURL = baseURL + "addresslist"
-// url/{user_id}
-
-let getAllGovernoratesAndAreasURL = baseURL + "governorates"
-
-let addAddressURL = baseURL + "create_address"
-
-let ordersURL = baseURL + "orders"
-
-let placeOrderURL = baseURL + "create/booking"
-
-let updateAddressURL = baseURL + "update-address"
-
-let aboutUsURL = baseURL + "cms/1"
-
-let privacyURL = baseURL + "cms/2"
-
-let termsURL = baseURL + "cms/3"
-
-let contactUsURL = baseURL + "contact-us"
-
-let bookingDetailsURL = baseURL + "booking"
-
-let forgotPasswordURL = baseURL + "forgot-password"
+func metadataURL(for id: String) -> String{
+    return baseURL + "v2/cryptocurrency/info?id=\(id)"
+}

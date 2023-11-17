@@ -28,7 +28,7 @@ class Button: UIButton {
     
     init(title: String? = nil,
          attributedTitle: NSAttributedString? = nil,
-         titleColor: UIColor = .darkText,
+         titleColor: UIColor = .black,
          font: UIFont = .CustomFont(),
          backgroundColor: UIColor = .clear,
          borderColor: UIColor? = nil,
@@ -101,14 +101,13 @@ class Button: UIButton {
         
         didSet {
             
-            let borderColor = UIColor(cgColor: self.layer.borderColor ?? CGColor(gray: 0, alpha: 0))
-            
             if isHighlighted{
                 
                 if backgroundColor != .clear {
                     
                     self.backgroundColor = self.backgroundColor?.withAlphaComponent(0.5)
                 }
+                
                 
                 self.subviews.forEach { subview in
                     subview.alpha =  0.5
@@ -120,17 +119,13 @@ class Button: UIButton {
                 
             } else {
                 
-                UIView.animate(withDuration: 0.2) { [weak self] in
-                    guard let self else { return }
+                UIView.animate(withDuration: 0.2) {
                     self.subviews.forEach { subview in
                         subview.alpha =  1.0
                     }
-    
                 }
                 
-                
-                UIView.animate(withDuration: 0.2) { [weak self] in
-                    guard let self else { return }
+                UIView.animate(withDuration: 0.2) {
                     
                     if self.backgroundColor != .clear {
                         self.backgroundColor = self.backgroundColor?.withAlphaComponent(1)
@@ -139,8 +134,7 @@ class Button: UIButton {
                 
                 guard let imageView = self.imageView else { return }
                 
-                UIView.animate(withDuration: 0.2) { [weak self] in
-                    guard let self else { return }
+                UIView.animate(withDuration: 0.2) {
                     
                     imageView.alpha = 1
                 }

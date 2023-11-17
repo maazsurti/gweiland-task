@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        Common.setInitialRootVC(with: RootViewController(), window: window, sceneDelegate: self)
+        Common.setInitialRootVC(with: RootVC(), window: window, sceneDelegate: self)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) { }

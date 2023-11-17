@@ -60,6 +60,7 @@ class Common{
         let vc = viewController
         let rootViewController = UINavigationController(rootViewController: vc)
         window.rootViewController = rootViewController
+        window.backgroundColor = .white
         window.overrideUserInterfaceStyle = .light
         window.makeKeyAndVisible()
         sceneDelegate.window = window

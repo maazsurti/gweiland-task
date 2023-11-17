@@ -10,6 +10,18 @@ import UIKit
 
 class CurrencyTV: TableView {
     
+    var currencyData = [Cryptocurrency]() {
+        didSet {
+            self.reloadData()
+        }
+    }
+    
+    var logoURLs = [String]() {
+        didSet{
+            self.reloadData()
+        }
+    }
+    
     override func configure() {
         super.configure()
         
@@ -21,7 +33,6 @@ class CurrencyTV: TableView {
         sectionHeaderHeight = UITableView.automaticDimension
         separatorColor = .clear
         clipsToBounds = true
-        bounces = false
         showsVerticalScrollIndicator = false
         translatesAutoresizingMaskIntoConstraints = false
 
@@ -34,11 +45,17 @@ class CurrencyTV: TableView {
 
 extension CurrencyTV: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        return currencyData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let data = currencyData[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: CurrencyCell.identifier, for: indexPath) as! CurrencyCell
+        cell.configure(with: data)
+        if !logoURLs.isEmpty {
+            cell.currencyImage.contentMode = .scaleAspectFit
+            cell.currencyImage.setImageWith(logoURLs[indexPath.row])
+        }
         return cell
     }
 

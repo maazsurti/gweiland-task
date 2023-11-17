@@ -61,4 +61,23 @@ class Banner: BaseView {
         bannerCurveView.Trailing == Trailing
       //  bannerCurveView.Height == 52.5
     }
+    
+    func configure(with model: Cryptocurrency?){
+        
+        guard let model else {
+            printError(with: "model is empty")
+            return
+        }
+    
+        let twentyFourHourChangePercentage = (model.quote?.usd?.percentChange24H?.rounded(toPlaces: 2) ?? 0.0)
+        let isChangePositive = twentyFourHourChangePercentage > 0
+        let isNoChange = twentyFourHourChangePercentage == 0
+        
+        currencyAbvLabel.text = model.symbol
+        currencyLabel.text = model.name
+        currencyValueLabel.text = "$\((model.quote?.usd?.price?.rounded(toPlaces: 2) ?? 0.0)) USD"
+        valueChangePercentLabel.text = "\(isChangePositive ? "+" : "")" + "\(twentyFourHourChangePercentage) %"
+        valueChangePercentLabel.textColor = isNoChange ? .black : isChangePositive ? .positive : .negative
+
+    }
 }

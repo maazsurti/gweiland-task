@@ -54,9 +54,9 @@ extension GenericApi {
         
         var request = URLRequest(url: URL)
         
-        let authorizationHeaderValue = "Bearer " + UserData.authToken
+        let apiKey = "a3da8db5-0e66-4433-a3df-d9ed0a1be91e"
         
-        request.setValue(authorizationHeaderValue, forHTTPHeaderField: "Authorization")
+        request.setValue(apiKey, forHTTPHeaderField: "X-CMC_PRO_API_KEY")
 
         request.setValue(isArabic ? "ar" : "en", forHTTPHeaderField: "Accept-Language")
         
