@@ -27,7 +27,7 @@ class CurrencyTVHeader: UITableViewHeaderFooterView {
         
         headerLabel.Leading == Leading
         headerLabel.Top == Top
-        headerLabel.Bottom == Bottom
+        headerLabel.Bottom == Bottom - 15
         
         viewAllButton.Top == headerLabel.Top
         viewAllButton.Trailing == Trailing

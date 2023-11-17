@@ -58,7 +58,7 @@ class RootView: BaseView {
         currencyTV.Top == banner.Bottom + 20
         currencyTV.Leading == navigationBar.Leading
         currencyTV.Trailing == navigationBar.Trailing
-      //  currencyTV.Bottom == tabBar.Top - 13
+        currencyTV.Bottom == tabBar.Top - 13
         
         tabBar.Leading == Leading + 13
         tabBar.Trailing == Trailing - 13

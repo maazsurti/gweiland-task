@@ -20,8 +20,11 @@ class CurrencyTV: TableView {
         rowHeight = UITableView.automaticDimension
         sectionHeaderHeight = UITableView.automaticDimension
         separatorColor = .clear
+        clipsToBounds = true
         bounces = false
+        showsVerticalScrollIndicator = false
         translatesAutoresizingMaskIntoConstraints = false
+
         
         if #available(iOS 15.0, *) {
             sectionHeaderTopPadding = 0
@@ -31,7 +34,7 @@ class CurrencyTV: TableView {
 
 extension CurrencyTV: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
