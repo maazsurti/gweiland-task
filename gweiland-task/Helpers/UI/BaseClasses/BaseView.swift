@@ -18,7 +18,7 @@ class BaseView: UIView {
     
     func configure() {
         
-        backgroundColor = .white
+        backgroundColor = .clear
     }
     
     func setConstraints() {

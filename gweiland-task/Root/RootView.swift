@@ -23,19 +23,25 @@ class RootView: BaseView {
     
     let banner = Banner()
     
+    let currencyTV = CurrencyTV()
+    
+    let tabBar = TabBar()
+    
     override func configure() {
         super.configure()
         
         subviews{
+            tabBar
             navigationBar
             searchFilterStack
             categoryBar
             banner
+            currencyTV
         }
         
         navigationBar.Top == safeAreaLayoutGuide.Top + 46
-        navigationBar.Leading == Leading + leadingPadding
-        navigationBar.Trailing == Trailing - trailingPadding
+        navigationBar.Leading == Leading + leadingSpacing
+        navigationBar.Trailing == Trailing - trailingSpacing
         
         searchFilterStack.Top == navigationBar.Bottom + 25
         searchFilterStack.Leading == navigationBar.Leading
@@ -49,5 +55,13 @@ class RootView: BaseView {
         banner.Leading == navigationBar.Leading
         banner.Trailing == navigationBar.Trailing
         
+        currencyTV.Top == banner.Bottom + 20
+        currencyTV.Leading == navigationBar.Leading
+        currencyTV.Trailing == navigationBar.Trailing
+      //  currencyTV.Bottom == tabBar.Top - 13
+        
+        tabBar.Leading == Leading + 13
+        tabBar.Trailing == Trailing - 13
+        tabBar.Bottom == safeAreaLayoutGuide.Bottom - 25
     }
 }
