@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80B3405F2B064AEF00CA5857 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B3405E2B064AEF00CA5857 /* RootViewController.swift */; };
+		809FBCA22B0B82750036D39C /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCA12B0B82750036D39C /* RootVC.swift */; };
+		809FBCA52B0B82A50036D39C /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 809FBCA42B0B82A50036D39C /* NVActivityIndicatorView */; };
+		809FBCA72B0B82A50036D39C /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 809FBCA62B0B82A50036D39C /* NVActivityIndicatorViewExtended */; };
+		809FBCB72B0B82D00036D39C /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAA2B0B82CF0036D39C /* CurrencyCell.swift */; };
+		809FBCB82B0B82D00036D39C /* CurrencyTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAB2B0B82CF0036D39C /* CurrencyTV.swift */; };
+		809FBCB92B0B82D00036D39C /* CurrencyTVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAC2B0B82CF0036D39C /* CurrencyTVHeader.swift */; };
+		809FBCBA2B0B82D00036D39C /* CategoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAD2B0B82CF0036D39C /* CategoryBar.swift */; };
+		809FBCBB2B0B82D00036D39C /* ButtonWithBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAE2B0B82CF0036D39C /* ButtonWithBadge.swift */; };
+		809FBCBC2B0B82D00036D39C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCAF2B0B82CF0036D39C /* NavigationBar.swift */; };
+		809FBCBD2B0B82D00036D39C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB12B0B82CF0036D39C /* TabBar.swift */; };
+		809FBCBE2B0B82D00036D39C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB22B0B82CF0036D39C /* TabBarItem.swift */; };
+		809FBCBF2B0B82D00036D39C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB32B0B82CF0036D39C /* SearchBar.swift */; };
+		809FBCC02B0B82D00036D39C /* ScaleAspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB42B0B82CF0036D39C /* ScaleAspectFitImageView.swift */; };
+		809FBCC12B0B82D00036D39C /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB52B0B82CF0036D39C /* FilterButton.swift */; };
+		809FBCC22B0B82D00036D39C /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCB62B0B82CF0036D39C /* Banner.swift */; };
+		809FBCC62B0B83050036D39C /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCC42B0B83050036D39C /* CryptoModel.swift */; };
+		809FBCC72B0B83050036D39C /* CryptoMetadataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FBCC52B0B83050036D39C /* CryptoMetadataModel.swift */; };
 		80B340BE2B06518900CA5857 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B3406F2B06518900CA5857 /* Localizable.strings */; };
 		80B340BF2B06518900CA5857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B340722B06518900CA5857 /* LaunchScreen.storyboard */; };
 		80B340C02B06518900CA5857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B340732B06518900CA5857 /* Assets.xcassets */; };
@@ -77,8 +93,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		809FBCA12B0B82750036D39C /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		809FBCAA2B0B82CF0036D39C /* CurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		809FBCAB2B0B82CF0036D39C /* CurrencyTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTV.swift; sourceTree = "<group>"; };
+		809FBCAC2B0B82CF0036D39C /* CurrencyTVHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTVHeader.swift; sourceTree = "<group>"; };
+		809FBCAD2B0B82CF0036D39C /* CategoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBar.swift; sourceTree = "<group>"; };
+		809FBCAE2B0B82CF0036D39C /* ButtonWithBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithBadge.swift; sourceTree = "<group>"; };
+		809FBCAF2B0B82CF0036D39C /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		809FBCB12B0B82CF0036D39C /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		809FBCB22B0B82CF0036D39C /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		809FBCB32B0B82CF0036D39C /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		809FBCB42B0B82CF0036D39C /* ScaleAspectFitImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAspectFitImageView.swift; sourceTree = "<group>"; };
+		809FBCB52B0B82CF0036D39C /* FilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		809FBCB62B0B82CF0036D39C /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		809FBCC42B0B83050036D39C /* CryptoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		809FBCC52B0B83050036D39C /* CryptoMetadataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoMetadataModel.swift; sourceTree = "<group>"; };
 		80B340572B064AEF00CA5857 /* gweiland-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gweiland-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80B3405E2B064AEF00CA5857 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		80B340712B06518900CA5857 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		80B340722B06518900CA5857 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B340732B06518900CA5857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,15 +180,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809FBCA52B0B82A50036D39C /* NVActivityIndicatorView in Frameworks */,
 				80B341072B0653B900CA5857 /* SDWebImage in Frameworks */,
 				80B341092B0653B900CA5857 /* SDWebImageMapKit in Frameworks */,
 				80B341042B0652E400CA5857 /* Stevia in Frameworks */,
+				809FBCA72B0B82A50036D39C /* NVActivityIndicatorViewExtended in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		809FBCA82B0B82CF0036D39C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				809FBCA92B0B82CF0036D39C /* CurrencyTV */,
+				809FBCB02B0B82CF0036D39C /* TabBar */,
+				809FBCB52B0B82CF0036D39C /* FilterButton.swift */,
+				809FBCAD2B0B82CF0036D39C /* CategoryBar.swift */,
+				809FBCAE2B0B82CF0036D39C /* ButtonWithBadge.swift */,
+				809FBCAF2B0B82CF0036D39C /* NavigationBar.swift */,
+				809FBCB32B0B82CF0036D39C /* SearchBar.swift */,
+				809FBCB42B0B82CF0036D39C /* ScaleAspectFitImageView.swift */,
+				809FBCB62B0B82CF0036D39C /* Banner.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		809FBCA92B0B82CF0036D39C /* CurrencyTV */ = {
+			isa = PBXGroup;
+			children = (
+				809FBCAA2B0B82CF0036D39C /* CurrencyCell.swift */,
+				809FBCAB2B0B82CF0036D39C /* CurrencyTV.swift */,
+				809FBCAC2B0B82CF0036D39C /* CurrencyTVHeader.swift */,
+			);
+			path = CurrencyTV;
+			sourceTree = "<group>";
+		};
+		809FBCB02B0B82CF0036D39C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				809FBCB12B0B82CF0036D39C /* TabBar.swift */,
+				809FBCB22B0B82CF0036D39C /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		809FBCC32B0B83050036D39C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				809FBCC42B0B83050036D39C /* CryptoModel.swift */,
+				809FBCC52B0B83050036D39C /* CryptoMetadataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		80B3404E2B064AEF00CA5857 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +254,7 @@
 		80B340592B064AEF00CA5857 /* gweiland-task */ = {
 			isa = PBXGroup;
 			children = (
+				809FBCC32B0B83050036D39C /* Models */,
 				80B3406E2B06518900CA5857 /* Files */,
 				80B340802B06518900CA5857 /* Helpers */,
 				80B341012B06519000CA5857 /* Root */,
@@ -337,7 +414,8 @@
 		80B341012B06519000CA5857 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				80B3405E2B064AEF00CA5857 /* RootViewController.swift */,
+				809FBCA82B0B82CF0036D39C /* Components */,
+				809FBCA12B0B82750036D39C /* RootVC.swift */,
 				80B3410A2B065DFD00CA5857 /* RootView.swift */,
 			);
 			path = Root;
@@ -363,6 +441,8 @@
 				80B341032B0652E400CA5857 /* Stevia */,
 				80B341062B0653B900CA5857 /* SDWebImage */,
 				80B341082B0653B900CA5857 /* SDWebImageMapKit */,
+				809FBCA42B0B82A50036D39C /* NVActivityIndicatorView */,
+				809FBCA62B0B82A50036D39C /* NVActivityIndicatorViewExtended */,
 			);
 			productName = "gweiland-task";
 			productReference = 80B340572B064AEF00CA5857 /* gweiland-task.app */;
@@ -396,6 +476,7 @@
 			packageReferences = (
 				80B341022B0652E400CA5857 /* XCRemoteSwiftPackageReference "Stevia" */,
 				80B341052B0653B900CA5857 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				809FBCA32B0B82A50036D39C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = 80B340582B064AEF00CA5857 /* Products */;
 			projectDirPath = "";
@@ -435,12 +516,15 @@
 			files = (
 				80B340FE2B06518900CA5857 /* NetworkConstants.swift in Sources */,
 				80B340EB2B06518900CA5857 /* UIFunctions.swift in Sources */,
+				809FBCB82B0B82D00036D39C /* CurrencyTV.swift in Sources */,
+				809FBCC72B0B83050036D39C /* CryptoMetadataModel.swift in Sources */,
 				80B340F52B06518900CA5857 /* Colors.swift in Sources */,
 				80B340CD2B06518900CA5857 /* CollectionViewFlowLayout.swift in Sources */,
 				80B340ED2B06518900CA5857 /* Loading.swift in Sources */,
 				80B340DC2B06518900CA5857 /* TableView.swift in Sources */,
 				80B340C12B06518900CA5857 /* AppDelegate.swift in Sources */,
 				80B340F62B06518900CA5857 /* Boilerplate.swift in Sources */,
+				809FBCC62B0B83050036D39C /* CryptoModel.swift in Sources */,
 				80B340DD2B06518900CA5857 /* TextField.swift in Sources */,
 				80B340F02B06518900CA5857 /* SeparatorLine.swift in Sources */,
 				80B340FA2B06518900CA5857 /* GeneralExtensions.swift in Sources */,
@@ -449,8 +533,8 @@
 				80B340EE2B06518900CA5857 /* MyAlert.swift in Sources */,
 				80B340FD2B06518900CA5857 /* APICalls.swift in Sources */,
 				80B340F42B06518900CA5857 /* Font.swift in Sources */,
-				80B3405F2B064AEF00CA5857 /* RootViewController.swift in Sources */,
 				80B340FB2B06518900CA5857 /* ExtensionURLSession.swift in Sources */,
+				809FBCBF2B0B82D00036D39C /* SearchBar.swift in Sources */,
 				80B340F82B06518900CA5857 /* Common.swift in Sources */,
 				80B340F22B06518900CA5857 /* Extensions.swift in Sources */,
 				80B340DA2B06518900CA5857 /* RTLSupportLayout.swift in Sources */,
@@ -459,6 +543,9 @@
 				80B341002B06518900CA5857 /* PersistentData.swift in Sources */,
 				80B340E02B06518900CA5857 /* BaseCollectionReusableView.swift in Sources */,
 				80B340DB2B06518900CA5857 /* CustomTextField.swift in Sources */,
+				809FBCA22B0B82750036D39C /* RootVC.swift in Sources */,
+				809FBCB72B0B82D00036D39C /* CurrencyCell.swift in Sources */,
+				809FBCB92B0B82D00036D39C /* CurrencyTVHeader.swift in Sources */,
 				80B340F92B06518900CA5857 /* ErrorHandling.swift in Sources */,
 				80B340FC2B06518900CA5857 /* Network.swift in Sources */,
 				80B340E12B06518900CA5857 /* CustomPageControl.swift in Sources */,
@@ -468,23 +555,31 @@
 				80B340EC2B06518900CA5857 /* SeparatorView.swift in Sources */,
 				80B340E22B06518900CA5857 /* Button.swift in Sources */,
 				80B340D42B06518900CA5857 /* WebviewView.swift in Sources */,
+				809FBCBD2B0B82D00036D39C /* TabBar.swift in Sources */,
 				80B340D72B06518900CA5857 /* PageControl.swift in Sources */,
 				80B340D62B06518900CA5857 /* TableViewCell.swift in Sources */,
 				80B340D32B06518900CA5857 /* BaseCollectionViewCell.swift in Sources */,
+				809FBCBE2B0B82D00036D39C /* TabBarItem.swift in Sources */,
 				80B340E32B06518900CA5857 /* BaseImageView.swift in Sources */,
 				80B3410B2B065DFD00CA5857 /* RootView.swift in Sources */,
 				80B340EF2B06518900CA5857 /* HyperlinkLabel.swift in Sources */,
+				809FBCBB2B0B82D00036D39C /* ButtonWithBadge.swift in Sources */,
 				80B340D82B06518900CA5857 /* DefaultVC.swift in Sources */,
+				809FBCC02B0B82D00036D39C /* ScaleAspectFitImageView.swift in Sources */,
 				80B340DE2B06518900CA5857 /* Webview.swift in Sources */,
 				80B340D12B06518900CA5857 /* BaseTableViewCell.swift in Sources */,
 				80B340CB2B06518900CA5857 /* SceneDelegate.swift in Sources */,
 				80B340CF2B06518900CA5857 /* BaseViewController.swift in Sources */,
 				80B340D52B06518900CA5857 /* WebviewVC.swift in Sources */,
+				809FBCC12B0B82D00036D39C /* FilterButton.swift in Sources */,
+				809FBCBC2B0B82D00036D39C /* NavigationBar.swift in Sources */,
 				80B340F12B06518900CA5857 /* OrderDetailLabel.swift in Sources */,
 				80B340D02B06518900CA5857 /* CollectionVIew.swift in Sources */,
 				80B340CC2B06518900CA5857 /* UIConstants.swift in Sources */,
 				80B340D92B06518900CA5857 /* NoDataView.swift in Sources */,
+				809FBCC22B0B82D00036D39C /* Banner.swift in Sources */,
 				80B340D22B06518900CA5857 /* StackView.swift in Sources */,
+				809FBCBA2B0B82D00036D39C /* CategoryBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +794,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		809FBCA32B0B82A50036D39C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		80B341022B0652E400CA5857 /* XCRemoteSwiftPackageReference "Stevia" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/freshOS/Stevia";
@@ -718,6 +821,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		809FBCA42B0B82A50036D39C /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809FBCA32B0B82A50036D39C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		809FBCA62B0B82A50036D39C /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809FBCA32B0B82A50036D39C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
 		80B341032B0652E400CA5857 /* Stevia */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80B341022B0652E400CA5857 /* XCRemoteSwiftPackageReference "Stevia" */;
